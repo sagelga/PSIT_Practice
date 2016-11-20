@@ -1,0 +1,291 @@
+Github Saves
+https://github.com/sagelga/Python_PreProgramming
+
+Call python on CMD
+py -3
+
+String on Arith---------------------
+"Hello" * 10 => HelloHelloHelloHelloHelloHelloHelloHelloHelloHello
+"Hello"+"Hello"+"Hello" / 3 => Error
+"Hello" * 10.0 => Error
+
+Python Operators---------
++
+-
+*
+/ -> Divide
+// -> Floor Division (Will not print out the decimals of the division)
+% -> Modulus (Will print out only decimal of the division)
+Interchange Type--------------------
+IF
+kill = 10.0
+
+int(kill)
+=> 10
+kill
+=> 10.0
+kill=int(kill)
+=> 10
+kill=str(kill)
+=> '10'
+
+Revertible if it possible
+
+IF
+dead = 'dead'
+
+int(dead)
+=> Error
+
+IF
+kill = 10.2
+
+float(kill)
+=> 10.2
+int(kill)
+=> Error
+
+Change float -> int -> print OK
+String * String = Error
+
+Print in Arith
+print(14*4525*452*52**52574*52*452*452*154) => Answer
+print("*" * 10) => **********
+
+Print in Commands
+print("/n" * 10) => /n/n/n/n/n/n/n/n/n/n
+print("\n" * 10) => Do \n 10 times
+
+Arrays--------------------------
+IF
+text=ABCDEFGHIJKLMNOPQRSTUVWXYZ
+
+text[0:20:2] => ACEGIK
+Take every 2nd alphabet from the line and from range of 0 to 20
+
+text[-1] => Z
+Take the alphabet from the last one first.
+
+text[::2] => ACEGIKMOQSUWY
+Selects all the second letter until the end.
+
+text[0] => A
+First one will be 0
+
+text[1:4] => BCDE
+
+text[:4] => ABCD
+Will print out the text until 4
+
+Uppercase | Lowercase | Swapcase Conversion
+IF
+text = "Hello "
+print(text.upper()) => HELLO
+Will print out variables in upper case
+
+print(text.lower()) => hello
+Will print out variables in lower case
+
+print(text.swapcase()) => hELLO
+Will print out inverted case of the variables
+
+print(text.strip) => Hello
+Will print out, but without space
+
+Text Skip Line
+print("assasin /n heal")
+=> assasn
+ heal
+
+ASCII Conversion
+ord("G") =>71
+Will find ASCII number of the string (G)
+
+chr(65) => A
+Will find character from the ASCII provided (65)
+
+Selecting the variable on types
+IF
+dead = "kill"
+
+print("%s", %dead)
+=> kill
+
+Printing out types------------------
+%s - Print variable that are String
+%d - Print variable that are integer
+%f - Print variable that are float
+
+Text Aligning------------------
+%50s - Print variable, but in (50) character. Print will be right align, using spaces
+%-50s - Print variable, but in (50) character. Print will be left align, using spaces
+
+Text Cut----------------------
+%.5s - Print variable, but in (5) character. Over limit will not be printed
+%.4f - Print decimal to 4 significant point
+%4f or %4d - Print 4 significant point
+
+String Addition------------------
+print(Hello, You) => Hello You
+print(Hello + You) => HelloYou
+
+Min Max---------------
+IF
+num1 = 15
+num2 = 8
+num3 = 20.2
+
+min(num1, num2, num3) => 8
+max(num1, num2, num3) => 20.2
+
+Word Length---------------
+len("Hello") => 5
+Count the letter inside
+
+Count Text
+IF
+text = "chiibi eiei"
+
+text.count("i") =>5
+text.count("e") => 2
+text.count("ei") => 2
+Count all the letters inside
+
+Ceiling | Floor | Square Root | Absolutes---------------
+IF
+import math
+num = 50.25
+
+math.ceil(num) => 51
+math.ceil(1.0) => 1
+
+math.floor(num) => 50
+math.floor(5.9) => 5
+
+math.sqrt(2) => 1.414213......
+or use x**(1/2)
+
+abs(-1) => 1
+abs(21) => 21
+
+math.pi => Pi
+math.e => e
+
+Replace Text-----------------
+IF
+a = "ABCDEF"
+a.replace("A", "B") => BBCDEF
+Replace the text(A) to text(B)
+
+Variable Addition-----------------
+IF
+key = 15
+
+key = key + 1
+Same as
+key += 1
+
+Condition If-----------------
+text.isupper()  => Check wheather the text is all in uppercase
+text.islower() => Check wheather the text is all in lowercase
+not text.islower() and not text.isupper => Check whether the text is in mixed case
+text.isdigit() => Check wheather the text is nunber or not
+text.isalpha() => Check text is in value of text
+
+Type-----------------
+type("Hello") => <class string>
+type(true) => <class bool>
+
+Loop | While | For-----------------
+While Loop => Loop will still going untl the condition is false
+For Loop => Loop will going for the certain amount of times / range
+
+while num < 100:
+  print("Hello")
+  num += 1
+=> Hello * 100
+
+for i in range(start, stop, step)
+
+for i in range(10):
+  print("i")
+=> 1 2 3 4 5 6 7 8 9
+
+for i in range(1, 10+1):
+  print(i)
+=> 1 2 3 4 5 6 7 8 9 10
+
+for i in range(1, 10+1, 2):
+  print(i)
+=> 1 3 5 7 9
+
+text = "Hello"
+for i in text:
+  print(i)
+
+text = "Hello"
+for i in "Play of the game"
+  print(i)
+=> P
+l
+a
+y
+
+o
+f
+
+t
+h
+e
+
+g
+a
+m
+e
+
+for i in "Play of the game"
+  print("bobo")
+=> bobo * length of "Play of the game"
+
+while 0: = while False:
+while 1: = while True:
+
+num = 0
+while 1:
+  num += 1
+  if num == 10:
+    break
+=> 1 2 3 4 5 6 7 8 9 10
+
+num = "python"
+for index in num:
+  if index == "h":
+    continue
+  print(index)
+=> p
+y
+t
+o
+n
+
+break => force exit the loop
+pass => say that program is still running
+continue => start the loop again without fully run the loop
+
+Arrays | Append | Pop | Sort--------
+num = (0,1,2,3) -> Tuple - No change later
+num = [0,1,2,3] -> List - Can be change
+
+num.append(4) -> [0,1,2,3,4] - Add (4) to num
+
+num.pop(3) -> 3 - Print out 3rd in the list
+
+text = [1, 3, 2]
+text.sort()
+print(text) -> [1, 2, 3]
+sorted(text) -> [1, 2, 3] - Can be use by tuple listings
+
+sorted(text, reverse=True) -> [3, 2, 1]
+text.sort(reverse=True) -> [3, 2, 1]
+
+Dict | Split---------
